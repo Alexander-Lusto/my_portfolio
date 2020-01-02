@@ -1,0 +1,176 @@
+
+/* main settings and font settings  */
+body{
+  background-image: url(img/background.jpg);
+  background-position:center top;
+  background-repeat: no-repeat;
+  text-transform:uppercase;
+  font-family: Roboto;
+  letter-spacing: 1px;
+  color:#AAABAB;
+}
+
+main{
+  width:340px;
+  height:315px;
+  background-color:white;
+  margin:200px auto;
+  border-radius: 10px;
+
+}
+
+p{
+  padding-left: 10px;
+  font-size:13px;
+  letter-spacing: 0.5px;
+}
+.bold{
+  font-weight:bold;
+  color:#000000;
+
+}
+
+/* table header */
+h2{
+  margin:0px;
+  text-align:center;
+  font-size:35px;
+  color:#AAABAB;
+  letter-spacing: 3px;
+}
+.dots{
+  color:#DEDEDE;
+}
+h1{
+  margin:0;
+  margin-top:5px;
+  text-align:center;
+  font-size:21px;
+  color:#343434;
+}
+
+/* table settings  */
+.table{
+  display:table;
+  width:340px;
+}
+.table-cell.header{
+  vertical-align: top;
+  height:65px;
+  border:none;
+}
+
+.table-row{
+  display:table-row;
+}
+.table:nth-child(2) .table-row{
+  height:55px;
+}
+
+.table:not(:first-child) .table-row:hover{
+  background-color:#DDDDDD;
+    cursor: pointer;
+
+}
+
+.table-cell{
+  display:table-cell;
+  vertical-align:middle;
+  border-top:1px solid #DEDEDE;
+}
+
+.table:first-child .table-cell{
+  border:none
+}
+
+/*  выравнивание колонок  */
+.colgroup{
+  display:table-column-group;
+}
+.column{
+  display:table-column;
+}
+.column-1{
+  width:80px;
+}
+.column-2{
+  width:200px;
+}
+.column-3{
+  width:60px;
+}
+
+
+/* настройки картинок и эффекты */
+.image{
+  text-align:right;
+}
+.check img{
+  padding-left:15px;
+  visibility: hidden;
+  width:25px;
+}
+
+.check.show img{
+  visibility: visible;
+}
+
+.table-row:active .check.show img{
+  visibility: hidden;
+}
+
+.table-row:active .check img{
+    visibility: visible;
+}
+
+
+img{
+  width:40px;
+  vertical-align: middle;
+}
+
+
+
+
+/* button */
+
+
+button, .button.table-cell{
+  background-color:blue;
+  width:100%;
+  border:none;
+  height:50px;
+  color:white;
+  border-radius:0 0 10px 10px ;
+}
+button:active{
+  border-top:10px solid white;
+}
+button:hover{
+  cursor: pointer;
+}
+button:focus{
+  outline:none;
+}
+.button{
+  text-align:center;
+  vertical-align:middle;
+}
+.button-text{
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom:0px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: Roboto;
+  font-size:13px;
+
+}
+a:active{
+  border:none;
+}
+
+.img-inline{
+  width:20px;
+  display: inline-block;
+}

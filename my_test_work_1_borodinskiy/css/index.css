@@ -1,0 +1,393 @@
+@import "global.css";
+@import "header.css";
+@import "footer.css";
+
+/* content styles */
+.page{
+  position: relative;
+}
+.logo{
+  text-align: center;
+
+  padding-top: 56px;
+  margin-bottom: 35px;
+}
+
+.logo__img{
+  width: 371px;
+  height: 155px;
+}
+.features{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+.features__item{
+  text-align: center;
+  width: 300px;
+}
+
+.features__item h2{
+  font-size: 30px;
+  line-height: 42px;
+  color: #ffffff;
+}
+
+.features__item h2::after{
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 35px;
+  transform: rotate(45deg);
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+
+}
+
+.features__item p{
+  margin: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+/* content styles*/
+.content, .information{
+  display: flex;
+  justify-content: space-between;
+  width: 940px;
+  margin-bottom:40px;
+
+  color:black;
+  background-image:  url(../img/fon-separator.png), url(../img/fon.jpg);
+  background-repeat:no-repeat, repeat;
+  background-position: center, left;
+}
+.content h2, .information h2{
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-size: 30px;
+  line-height: 42px;
+  color: #000000;
+}
+.content p, .information p{
+  margin-bottom: 25px;
+
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+}
+
+
+.content__news{
+  margin-left: 80px;
+  margin-top: 45px;
+  margin-bottom: 50px;
+  width: 380px;
+}
+
+.content__news datetime{
+  text-transform: lowercase;
+}
+
+.content__gallery, .information__sign-up{
+  width: 300px;
+  margin-right: 80px;
+  margin-top: 45px;
+  margin-bottom: 50px;
+}
+
+.gallery__border-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 178px;
+  margin-bottom: 40px;
+
+  background-color: white;
+}
+
+.gallery__photo{
+  width: 286px;
+  height: 164px;
+
+}
+
+.content__gallery h2{
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-size: 30px;
+  line-height: 42px;
+  color: #000000;
+}
+
+.gallery__btn-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/* information block styles */
+.information{
+  display: flex;
+  justify-content: space-between;
+  width: 940px;
+  margin-bottom: 65px;
+}
+
+.information__contact-info{
+  margin-left: 80px;
+  margin-top: 45px;
+  margin-bottom: 50px;
+  width: 350px;
+}
+
+.contact-info__btn-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width:300px;
+}
+
+.sign-up p{
+  margin-bottom: 20px;
+}
+
+.sign-up__form{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.sign-up__form-item{
+  margin-bottom: 10px;
+}
+
+.sign-up__form p{
+  margin: 0;
+  margin-bottom: 5px;
+  padding-left:15px;
+}
+
+.sign-up__input{
+  box-sizing: border-box;
+  width: 140px;
+  height: 43px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  font: inherit;
+  font-size: 14px;
+  border: 2px solid black;
+  outline: none;
+  color: #4a4948;
+}
+
+.sign-up__input::placeholder{
+  font: inherit;
+  color: #4a4948;
+}
+
+.sign-up__input:hover {
+  border: 2px solid #663d15;
+}
+
+.sign-up__input:focus {
+  border: 2px solid #663d15;
+}
+
+.sign-up__button{
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 10px;
+}
+/* modal window */
+.modal-close{
+  display: none;
+}
+.modal-show{
+  display: block;
+}
+
+.modal{
+  position: absolute;
+  top: 50px;
+  right: 240px;
+  width: 460px;
+  height: 385px;
+  background-color: #ffffff;
+  background-image: url(../img/fon.jpg);
+
+  box-shadow: 0 30px 50px 0 rgb(0,0,0,0.75);
+  color: #000000;
+}
+
+.modal__inner{
+  position: relative;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 35px;
+  padding-bottom: 60px;
+}
+
+.modal__btn-close{
+  position: absolute;
+  top: 10px;
+  right: -35px;
+  cursor: pointer;
+}
+
+.modal__title{
+  margin:0;
+  margin-bottom: 20px;
+  font-size: 30px;
+  line-height: auto;
+}
+.modal__text{
+  margin: 0;
+  margin-bottom: 15px;
+
+}
+.modal__input{
+  box-sizing: border-box;
+  width: 300px;
+  height: 43px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+
+
+  font: inherit;
+  font-size: 14px;
+  border: 2px solid black;
+  outline: none;
+  color: #4a4948;
+}
+.modal__input-login{
+  background-image: url(../img/user.svg);
+  background-position: center right 15px;
+  background-repeat: no-repeat;
+  margin-bottom: 10px;
+}
+.modal__input-password{
+  background-image: url(../img/lock.svg);
+  background-position: center right 15px;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+.modal__input::placeholder{
+  font: inherit;
+  color: #000000;
+}
+
+.modal__input:hover {
+  border: 2px solid #663d15;
+}
+
+.modal__input:focus {
+  border: 2px solid #663d15;
+}
+
+.modal__remember-pass{
+  float:right;
+  margin: 0;
+  text-decoration: underline;
+  text-decoration-color: #7c7a79;
+  cursor: pointer;
+}
+
+.modal__button{
+  width: 100%;
+  margin-top: 20px;
+}
+
+.modal__label{
+  margin-bottom: 25px;
+}
+
+.modal__label:hover {
+  color: #663d15;
+}
+
+.modal__label{
+  position: relative;
+  padding-left: 40px;
+
+  cursor: pointer;
+}
+
+.modal__label input[type="checkbox"] + .modal__checkbox-indicator{
+  position: absolute;
+  left: 0;
+  top: -2px;
+
+  border: 2px solid #000;
+  width: 20px;
+  height: 20px;
+
+}
+
+.modal__label input[type="checkbox"]:checked + .modal__checkbox-indicator::before,
+.modal__label input[type="checkbox"]:checked + .modal__checkbox-indicator::after{
+  content: "";
+  position: absolute;
+
+  top: 9px;
+  left: 4.5px;
+  width: 12px;
+  height: 2px;
+
+  background-color: #000;
+}
+
+.modal__label input[type="checkbox"]:checked + .modal__checkbox-indicator::before{
+  transform: rotate(45deg);
+}
+
+.modal__label input[type="checkbox"]:checked + .modal__checkbox-indicator::after{
+  transform: rotate(-45deg);
+}
+
+.modal__label input[type="checkbox"]:focus + .modal__checkbox-indicator{
+  outline: thin dotted;
+  outline: -webkit-focus-ring-color auto 5px;
+}
+
+/* map */
+.map{
+  position: absolute;
+  top: 500px;
+  left: 90px;
+  width: 780px;
+  height: 575px;
+
+  background-color: white;
+  box-shadow: 0 30px 50px 0 rgb(0,0,0,0.75);
+}
+
+.map__inner{
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+
+  margin: 7px;
+  background-image: url(../img/map.png);
+  background-repeat: no-repeat;
+}
+
+.map__btn-close{
+  position: absolute;
+  top: 10px;
+  right: -35px;
+  cursor: pointer;
+}

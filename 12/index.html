@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Loop 2 - Step 2</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <section class="settings">
+    <div class="settings__header-wrapper">
+      <h1 class="settings__title"> Account settings </h1>
+      <span class="settings__close-btn"></span>
+    </div>
+    <div class="settings__form form">
+      <img class="form__logo" src="img/avatar.jpg" width="50px" height="50px" alt="avatar">
+      <form method="get" name="account-settings-form">
+
+        <label class="form__item">
+          <p class="form__desc"> Username </p>
+          <input class="form__inp" type="text" name="user-name" placeholder="Enter your username">
+        </label>
+
+        <label class="form__item form__item--short">
+          <p class="form__desc"> First name </p>
+          <input class="form__inp form__inp--short" type="text" name="first-name" placeholder="Enter your first name">
+        </label>
+
+        <label class="form__item form__item--short form__item--short-right">
+          <p class="form__desc"> Last name </p>
+          <input class="form__inp form__inp--short" type="text" name="last-name" placeholder="Enter your last name">
+        </label>
+
+        <label class="form__item">
+          <p class="form__desc"> Email </p>
+          <input class="form__inp" type="email" name="email" placeholder="Enter your email">
+        </label>
+
+        <label class="form__item">
+          <p class="form__desc"> Bio </p>
+          <textarea class="form__inp form__inp--textarea" name="account-name" placeholder="Tell us about yourself"></textarea>
+        </label>
+      </form>
+    </div>
+    <div class="settings__bottom-wrapper">
+      <span class="settings__btn"> Cancel </span>
+      <span class="settings__btn"> Save </span>
+    </div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Loop 2 - Step 5</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <section class="rout">
+
+    <nav class="rout__header">
+      <img class="header__menu" src="img/menu.svg" width="25" height="25" alt="hamburger-menu">
+      <h1 class="header__title">Google</h1>
+      <img class="header__search" src="img/search.svg" width="25" height="25" alt="search">
+    </nav>
+
+    <div class="rout__map map">
+      <div class="map__trip">
+        <span class="map__location">Hamburg</span>
+        <div class="map__line" width="25" height="25" alt="car">
+          <img src="img/car.svg">
+        </div>
+        <span class="map__location">Cologne</span>
+      </div>
+      <div class="map__options">
+        <p class="map__option-item">
+          Time <span>4h 22min</span>
+        </p>
+        <p class="map__option-item">
+          Distance <span>424km</span>
+        </p>
+      </div>
+      <button class="map__btn">
+        <img src="img/location.svg" width="25" height="25" alt="location">
+        Open Map
+      </button>
+    </div>
+
+
+    <h2 class="rout__current-city">Hamburg</h2>
+    <div class="rout__instructions-list">
+
+      <div class="rout__instructions-item">
+        <img class="instructions-item__icon" src="img/direction.svg" width="25" height="25" alt="direction">
+        <p class="instructions-item__desc">
+          <span>9 min(4.6 km)</span>
+          Head northeast on Plan forward Bergstrasse
+       </p>
+     </div>
+
+      <div class="rout__instructions-item">
+        <img class="instructions-item__icon" src="img/direction.svg" width="25" height="25" alt="direction">
+        <p class="instructions-item__desc">
+          <span>82 km</span>
+          Turn right onto Bergstasse
+       </p>
+     </div>
+
+      <div class="rout__instructions-item">
+        <img class="instructions-item__icon" src="img/direction.svg" width="25" height="25" alt="direction">
+        <p class="instructions-item__desc">
+          <span>210 m</span>
+          Continue onto Schmiedestrasse
+       </p>
+     </div>
+     <div class="rout__streetview"></div>
+     <!-- <img class="rout__streetview" src="img/streetview.jpg"width="500" height="100" alt="streetview"> -->
+
+      <div class="rout__instructions-item">
+        <img class="instructions-item__icon" src="img/direction.svg" width="25" height="25" alt="direction">
+        <p class="instructions-item__desc">
+          <span>64 m</span>
+          Continue onto Alto Fischmarkt
+       </p>
+     </div>
+    </div>
+  </section>
+</body>
+</html>

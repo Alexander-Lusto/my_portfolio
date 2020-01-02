@@ -1,0 +1,37 @@
+.recomendations{
+  margin: 25px 0;
+  background-color: white;
+  border: 1px solid #e8f4fc;
+}
+
+.recomendations__list{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.recomendations__item-text{
+  box-sizing: border-box;
+  width: 200px;
+  position: relative;
+  margin: 0;
+  border: 1px solid #e8f4fc;
+  padding: 20px;
+  margin-bottom: 20px;
+  z-index: 1;
+
+  &::after{
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    left: -1px;
+    width: 30px;
+    height: 30px;
+
+    background-color: white;
+    border: 1px solid #e8f4fc;
+    clip: rect(5px, auto, auto, 5px);
+    transform: rotate(90deg) skewX(45deg);
+    z-index: 2;
+  }
+}

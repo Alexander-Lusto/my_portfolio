@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Loop 2 - Challenge</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__top-wrap">
+      <div class="header__logo">
+        <img src="img/logo.png" width="60" height="50" alt="logo">
+      </div>
+      <div class="header__search">
+        <input type="text" name="search_form" placeholder="Search">
+      </div>
+      <nav class="header__menu menu">
+        <a class="menu__item" href="#home">Home</a>
+        <a class="menu__item" href="#home">Profile</a>
+        <a class="menu__item" href="#home">Connections</a>
+        <a class="menu__item" href="#home">Interest</a>
+        <a class="menu__item menu__item--red" href="#home">Try Premium</a>
+      </nav>
+      <div class="header__icons">
+        <i class="material-icons material-icons--message">messages</i>
+        <i class="material-icons material-icons--notifications">notifications</i>
+        <i class="material-icons material-icons--friends">person_add</i>
+       </div>
+       <div class="header__avatar">
+         <img src="img/avatar.jpg" width="30" height="30" alt="avatar">
+       </div>
+    </div>
+    <div class="header__bottom-wrap">
+      <ul class="header__submenu">
+        <li class="submenu__item submenu__item--current">
+          <a class="submenu__item-link " href="#posts">Posts</a>
+        </li>
+        <li class="submenu__item">
+          <a class="submenu__item-link" href="#background">Background</a>
+        </li>
+        <li class="submenu__item">
+          <a class="submenu__item-link" href="#recomendations">Recomendations</a>
+        </li>
+        <li class="submenu__item">
+          <a class="submenu__item-link" href="#following">Following</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <main class="page">
+    <aside class="sidebar">
+      <img class="sidebar__user-img" src="img/bill-gates-avatar.png" width="100" height="100" alt="bill-gates-avatar">
+      <h1 class="sidebar__user-name">Bill Gates</h1>
+      <h2 class="sidebar__user-profession">Microsoft Founder</h2>
+      <h3 class="sidebar__user-city">Greater Seattle Area</h3>
+      <a href="#" class="sidebar__btn btn">Follow</a>
+      <a href="#" class="sidebar__btn btn btn--white">
+        Connect
+        <i class="material-icons">keyboard_arrow_down</i>
+      </a>
+      <div class="sidebar__account-options">
+        <div class="sidebar__options-item">
+          <b>200</b>
+          <span>connecti...</span>
+        </div>
+        <div class="sidebar__options-item">
+          <b>1.9M</b>
+           <span>followers</span>
+        </div>
+      </div>
+      <div class="sidebar__user-links">
+        <a class="sidebar__link" href="#"><i class="material-icons">link</i> linkedin.com/in/billgat...</a></span>
+        <a class="sidebar__link" href="#"><i class="material-icons">language</i> billgates.com</a></span>
+      </div>
+      <div class="sidebar__export-page">
+        <a class="sidebar__download" href="#file"><i class="material-icons">get_app</i> Export page as PDF</a>
+      </div>
+    </aside>
+    <aside class="right-sidebar">
+      <h2 class="right-sidebar__title">People also viewed</h2>
+      <ul class="right-sidebar__list">
+        <li class="right-sidebar__user user">
+          <img class="user__avatar" src="img/avatar.jpg" width="30" height="30" alt="avatar 1">
+          <p class="user__info">
+            <span class="user__name">Sergey Brin</span>
+            <span class="user__company">Google</span>
+          </p>
+        </li>
+        <li class="right-sidebar__user user">
+          <img class="user__avatar" src="img/avatar2.jpg" width="30" height="30" alt="avatar">
+          <p class="user__info">
+            <span class="user__name">Beffrey Bezos</span>
+            <span class="user__company">Amazon</span>
+          </p>
+        </li>
+        <li class="right-sidebar__user user">
+          <img class="user__avatar" src="img/avatar3.jpg" width="30" height="30" alt="avatar">
+          <p class="user__info">
+            <span class="user__name">Steve Jobs</span>
+            <span class="user__company">Apple</span>
+          </p>
+        </li>
+      </ul>
+      <h2 class="right-sidebar__title">More influencers</h2>
+      <div class="right-sidebar__toggle">
+        <i class="material-icons">keyboard_arrow_left</i>
+        <img class="right-sidebar__toggle-avatar" src="img/avatar3.jpg" width="30" height="30" alt="avatar">
+        <i class="material-icons">keyboard_arrow_right</i>
+      </div>
+      <p class="user__info--big">
+        <span class="user__name user__name--big">Steve Jobs</span>
+        <span class="user__company user__company--big">Apple</span>
+      </p>
+
+    </aside>
+    <div class="center">
+      <section class="posts" id="posts">
+        <div class="posts__nav nav">
+          <h2 class="posts__title nav__title">Posts</h2>
+          <div class="posts__toggle-wrap nav__toggle-wrap">
+            <button class="posts__toggle toggle">
+              <i class="material-icons">keyboard_arrow_left</i>
+            </button>
+            <button class="posts__toggle toggle">
+              <i class="material-icons">keyboard_arrow_right</i>
+            </button>
+          </div>
+        </div>
+        <div class="posts__article-list">
+          <a href="#article1" class="posts__article article">
+            <img class="article__preview" src="img/article1.jpg" width="150" height="150" alt="article preview">
+            <h3 class="article__title">3 Myth That Confuse Top-Managers</h3>
+            <time class="article__date" datetime="2016-02-19">February 19, 2016</time>
+          </a>
+          <a href="#article2" class="posts__article article">
+            <img class="article__preview" src="img/article2.jpg" width="150" height="150" alt="article preview">
+            <h3 class="article__title">How much do we spend on hot drinks</h3>
+            <time class="article__date" datetime="2016-02-19">February 19, 2016</time>
+          </a>
+          <a href="#article3" class="posts__article article">
+            <img class="article__preview" src="img/article3.jpg" width="150" height="150" alt="article preview">
+            <h3 class="article__title">Good news you might have noticed</h3>
+            <time class="article__date" datetime="2016-02-19">February 19, 2016</time>
+          </a>
+        </div>
+      </section>
+      <section class="background" id="background">
+        <div class="background__nav nav">
+          <h2 class="background__title nav__title">Background</h2>
+        </div>
+        <div class="background__info">
+          <div class="background__item">
+            <h3 class="background__item-title"><i class="material-icons">assignment</i> Summary</h3>
+            <p class="background__item-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+
+          <div class="background__item">
+            <h3 class="background__item-title"><i class="material-icons">work</i> Experiance</h3>
+            <div class="background__person-info  person-info">
+              <span class="person-info__years"> 2000 present </span>
+              <span class="person-info__profession"> Co-founder, Chairman </span>
+              <span><a class="person-info__company" href="https://www.microsoft.com" target="_blank"> Microsoft </a></span>
+              <img src="img/logo-microsoft.png" width="150" height="50" alt="logo-microsoft">
+            </div>
+
+            <div class="background__person-info  person-info">
+              <span class="person-info__years"> 1992-1999 </span>
+              <span class="person-info__profession"> Senior Developer</span>
+              <span><a class="person-info__company" href="https://www.youtube.com" target="_blank"> Youtube </a></span>
+              <img src="img/logo-youtube.png" width="150" height="50" alt="logo-youtube">
+            </div>
+          </div>
+
+          <div class="background__item">
+            <h3 class="background__item-title"><i class="material-icons">account_balance</i> Education</h3>
+            <div class="background__person-info  person-info">
+              <span class="person-info__years"> 1973-1975 </span>
+              <span class="person-info__profession"> Harvard Univercity </span>
+              <span><a class="person-info__company" href="https://www.iit.edu/academics/programs/computer-science-bs" target="_blank"> BS Computer Science </a></span>
+            </div>
+
+            <div class="background__person-info  person-info">
+              <span class="person-info__years"> 1960- 1973 </span>
+              <span class="person-info__profession"> Lakeside School, Seattle</span>
+            </div>
+          </div>
+
+          <div class="background__item">
+            <h3 class="background__item-title"><i class="material-icons">people</i> Skills</h3>
+
+            <div class="background__skills skills">
+              <span class="skills__amount">74</span>
+              <span class="skills__name">Social Media Marketing</span>
+              <img class="skills__image" src="img/avatar.jpg" width="25" height="25" alt="skill">
+              <img class="skills__image" src="img/avatar2.jpg" width="25" height="25" alt="skill">
+              <img class="skills__image" src="img/avatar3.jpg" width="25" height="25" alt="skill">
+              <span class="skills__image  skills__image--total">71+</span>
+            </div>
+            <div class="background__skills skills">
+              <span class="skills__amount">67</span>
+              <span class="skills__name">Web Development</span>
+              <img class="skills__image" src="img/avatar2.jpg" width="25" height="25" alt="skill">
+              <img class="skills__image" src="img/avatar3.jpg" width="25" height="25" alt="skill">
+              <img class="skills__image" src="img/avatar.jpg" width="25" height="25" alt="skill">
+              <span class="skills__image  skills__image--total">17+</span>
+            </div>
+          </div>
+
+          <div class="background__item">
+            <h3 class="background__item-title"><i class="material-icons">star</i> Interests</h3>
+            <div class="background__interests">
+              <span class="interests__item">Wireless industry</span>
+              <span class="interests__item">Photography</span>
+              <span class="interests__item">Web design</span>
+              <span class="interests__item">Technology</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="recomendations" id="recomendations">
+        <div class="recomendations__nav nav">
+          <h2 class="recomendations__title nav__title">recomendations</h2>
+          <div class="recomendations__toggle-wrap nav__toggle-wrap">
+            <button class="recomendations__toggle toggle">
+              <i class="material-icons">keyboard_arrow_left</i>
+            </button>
+            <button class="recomendations__toggle toggle">
+              <i class="material-icons">keyboard_arrow_right</i>
+            </button>
+          </div>
+        </div>
+        <div class="recomendations__list">
+          <div class="recomandations__item">
+             <p class="recomendations__item-text">
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+             </p>
+             <div class="recomendations__user user">
+               <img class="user__avatar" src="img/avatar.jpg" width="30" height="30" alt="avatar">
+               <p class="user__info">
+                 <span class="user__name"> Steve Jobs </span>
+                 <span class="user__company"> Apple </span>
+               </p>
+             </div>
+          </div>
+          <div class="recomandations__item">
+             <p class="recomendations__item-text">
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+             </p>
+             <div class="recomendations__user user">
+               <img class="user__avatar" src="img/avatar2.jpg" width="30" height="30" alt="avatar">
+               <p class="user__info">
+                 <span class="user__name"> Mark Zuckerberg </span>
+                 <span class="user__company"> Facebook </span>
+               </p>
+             </div>
+          </div>
+          <div class="recomandations__item">
+             <p class="recomendations__item-text">
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+             </p>
+             <div class="recomendations__user user">
+               <img class="user__avatar" src="img/avatar3.jpg" width="30" height="30" alt="avatar">
+               <p class="user__info">
+                 <span class="user__name">Beffrey Bezos</span>
+                 <span class="user__company">Amazon</span>
+               </p>
+             </div>
+          </div>
+        </div>
+      </section>
+      <section class="following" id="following">
+        <div class="following__nav nav">
+          <h2 class="following__title nav__title">Following</h2>
+        </div>
+        <ul class="following__list">
+          <li class="following__item">
+            <div class="following__item-img">
+              <img src="img/logo-microsoft.png" width="100" height="50" alt="Logo Micrsoft">
+            </div>
+            <p class="following__item-name">
+              Microsoft
+            </p>
+            <a class="following__link" href="#follow">
+              <span class="following__link-btn">+</span>
+              <span class="following__link-text">Follow</span>
+            </a>
+          </li>
+          <li class="following__item">
+            <div class="following__item-img">
+              <img src="img/logo-amazon.jpg" width="100" height="50" alt="Logo Amazon">
+            </div>
+            <p class="following__item-name">
+              Amazon
+            </p>
+            <a class="following__link" href="#follow">
+              <span class="following__link-btn">+</span>
+              <span class="following__link-text">Follow</span>
+            </a>
+          </li>
+          <li class="following__item">
+            <div class="following__item-img">
+              <img src="img/logo-microsoft.png" width="100" height="50" alt="Logo Micrsoft">
+            </div>
+            <p class="following__item-name">
+              Microsoft
+            </p>
+            <a class="following__link" href="#follow">
+              <span class="following__link-btn">+</span>
+              <span class="following__link-text">Follow</span>
+            </a>
+          </li>
+          <li class="following__item">
+            <div class="following__item-img">
+              <img src="img/logo-amazon.jpg" width="100" height="50" alt="Logo Amazon">
+            </div>
+            <p class="following__item-name">
+              Amazon
+            </p>
+            <a class="following__link" href="#follow">
+              <span class="following__link-btn">+</span>
+              <span class="following__link-text">Follow</span>
+            </a>
+          </li>
+        </ul>
+        <a href="#see_all" class="following__btn btn btn--white">See all (20)</a>
+      </section>
+    </div>
+  </main>
+  <footer class="footer">
+      Linkedln Corporation © 2019
+  </footer>
+</body>
+</html>
+<!--
+  Ah, it smells like a new challenge!
+
+  This time we build a concept of some job search website.
+  It's more about small details this time and if you haven't yet tried splitting
+  your css into separate component files - that's the perfect time to try.
+  (Use @import in css to achieve that)
+
+  The other gimmick we introduce here is about using font icons instead of inserting images into our code.
+  The easiest out-of-the-box method is to use Google Material Icons,
+  so read about the implementation before you start:
+  https://material.io/icons/
+
+  And good luck!
+-->

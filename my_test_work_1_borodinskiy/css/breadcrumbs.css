@@ -1,0 +1,30 @@
+.breadcrumbs{
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.breadcrumbs-list__item{
+  display: inline-block;
+}
+
+.breadcrumbs-list__item:not(:last-child)::after{
+  content: "";
+  display: inline-block;
+  position: relative;
+  bottom: 2px;
+  width: 7px;
+  height: 7px;
+  transform: rotate(45deg);
+  background-color: #000000;
+  vertical-align: middle;
+  margin-left: 10px;
+  margin-right: 10px;
+
+}
+.breadcrumbs-list__item a{
+  color: #000000;
+}
+
+.breadcrumbs-list__item:last-child{
+  color: #ABA9A7;
+}

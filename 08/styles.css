@@ -1,0 +1,158 @@
+body{
+	background-color:#F8EBE9;
+	color:#000000;
+	font-family:Roboto;
+}
+
+main{
+	width:1000px;
+	min-height: 645px;
+	margin:140px auto;
+
+	background-color:#FFFFFF;
+	background-image:url(img/background.jpg);
+	background-size: 360px 100%;
+	background-position: left 0px center;
+	background-repeat:no-repeat;
+
+	box-shadow:0 40px 40px -30px #D5A293;
+}
+
+/* navbar  and links */
+.card-menu a, .card-photos a{
+	text-decoration:none;
+	color:#B1B1B1;
+	font-family:Roboto, Tahoma, sans-serif;
+	font-size:12px;
+	font-weight:900;
+	text-transform:uppercase;
+}
+.card-menu a.back{
+	color:#6283AF;
+}
+
+.card-menu a:hover, a.card-menu_open{
+	color:#413F50;
+}
+
+.card-menu li, .card-menu ul {
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+a.back:hover svg{
+	fill:#000;
+}
+
+/*navbar  grid*/
+.card-menu{
+	display:flex;
+	justify-content:space-between;
+	padding:30px;
+}
+.flex-container-1{
+	width:55px;
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	align-items:center;
+}
+.flex-container-2{
+	width:250px;
+	display:flex;
+	justify-content:space-between;
+}
+
+/* section*/
+.card-text{
+	color:#18181B;
+}
+.card-info{
+	box-sizing:border-box;
+	width:640px;
+	min-height:460px;
+
+	margin-left:auto;
+	padding-right:100px;
+	padding-left:100px;
+	padding-top:110px;
+	padding-bottom:110px;
+}
+.card-header{
+	font-family:Playfair, serif;
+	font-size:66px;
+	font-weight:500;
+	margin:0;
+	padding:0;
+	line-height:65px;
+	margin-bottom:30px;
+
+}
+.card-header::after{
+	content:"";
+	display:inline-block;
+	vertical-align:middle;
+	width: 100px;
+	height: 4px;
+	background-color:#000;
+}
+.card-header-author{
+	font-family:Playfair, serif;
+	font-weight:400;
+	font-size:20px;
+	margin-bottom:40px;
+}
+
+.flex-container-3{
+	display:flex;
+	justify-content:space-between;
+}
+.card-text{
+	width:225px;
+	font-size:16px;
+	line-height:30px;
+
+}
+.card-text p{
+	margin:0;
+}
+
+/*card-photos*/
+.card-photoes_preview{
+	width:175px;
+	height:110px;
+	background-color:#F8EBE9;
+	background-image: url(img/preview.jpg);
+	background-size:cover;
+
+	cursor:pointer;
+}
+.card-photoes_preview{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	margin-bottom:10px;
+
+}
+
+.card-photoes_preview img{
+	width:40px;
+	height:40px;
+
+	background-color:rgba(255,255,255,0.7);
+	border-radius:50%;
+
+}
+
+.card-photos a{
+
+	color:black;
+}
+.card-photos-view img{
+	position:relative;
+	top:3px;
+	left:1px;
+	width:16px;
+	height:16px;
+
+}

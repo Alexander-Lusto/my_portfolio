@@ -1,0 +1,89 @@
+@import "menu.css";
+@import "description.css";
+@import "features-list.css";
+
+/*global styles*/
+body{
+  background-color: black;
+  margin: 0;
+  font-family: Roboto, Arial, sans-serif;
+}
+.page{
+  background-color: #FFFFFF;
+  margin: 0 auto;
+}
+
+/* 1'st block - introduction  */
+.introduction{
+  min-height: 730px;
+  min-width: 1220px;
+
+  background-color: white;
+  background-image: url(../img/watches.jpg);
+  background-repeat: no-repeat;
+  background-size: 750px;
+  background-position: 130% 125px;
+  border-bottom: 1px solid #E0DFDF;
+}
+
+.introduction__inner{
+  width: 1210px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+  padding-top: 60px;
+}
+
+.introduction__desc{
+  margin-top: 150px;
+  margin-right: auto;
+}
+
+/* 2'd block - features  */
+.features{
+  border-bottom: 1px solid #E0DFDF;
+}
+
+.features__inner{
+  width: 1210px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom:50px;
+  margin: 0 auto;
+}
+
+.features__features-list{
+  margin-top: 50px;
+  margin-bottom: 105px;
+}
+
+    /* preview*/
+.preview{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.preview__img{
+  width: 535px;
+  height: 805px;
+}
+
+
+/* 3'd block - advantages */
+.advantages{
+  background-color: black;
+  background-image: url(../img/runners.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.advantages__inner{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 1210px;
+  height: 880px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}

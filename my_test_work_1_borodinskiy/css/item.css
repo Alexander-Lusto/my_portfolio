@@ -1,0 +1,84 @@
+@import "global.css";
+@import "header.css";
+@import "footer.css";
+
+/*card styles*/
+.card{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.card__photos{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  width: 460px;
+  margin-left: -12px;
+
+}
+.card__desc{
+  width: 400px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 25px;
+}
+
+.card__desc-art{
+  float: right;
+  color: #aeaeae;
+}
+
+.card__btn{
+  width: 80px;
+}
+
+.card__price{
+  display: flex;
+  width: 190px;
+  margin-bottom: 65px;
+
+  background-color: #e5e5e5;
+}
+
+.card__price span{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.card__desc p{
+  font-size: 14px;
+  line-height: 24px;
+  margin:0;
+  margin-bottom: 40px;
+}
+
+.card__desc h2{
+  margin: 0;
+  margin-bottom: 25px;
+
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.card__desc-item{
+  line-height: 24px;
+
+}
+
+.card__desc-item::before{
+  content: "";
+  display: inline-block;
+  position: relative;
+  bottom: 2px;
+  width: 7px;
+  height: 7px;
+  transform: rotate(45deg);
+  background-color: #000000;
+  vertical-align: middle;
+  margin-right: 10px;
+
+}

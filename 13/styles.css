@@ -1,0 +1,100 @@
+html {
+  min-height: 100%; }
+
+body {
+  background-color: #9C86E9;
+  background-image: linear-gradient(to top, #858AF1, #B884E6);
+  background-size: cover;
+  font-family: Roboto, Arial, sans-serif;
+  color: white; }
+
+.folder {
+  width: 310px;
+  margin: 150px auto;
+  background-color: pink;
+  background-image: linear-gradient(to right bottom, #BC7EDA, #8E77CE);
+  border-radius: 5px;
+  box-shadow: 0 10px 50px 0 #7C64AE; }
+
+/* folder header */
+.folder__top {
+  height: 85px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 5px 5px 0 0;
+  z-index: 2; }
+
+.folder__top-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 65px;
+  margin-bottom: 20px;
+  border-left: 2px solid white; }
+
+.folder__tittle-wrap {
+  display: flex;
+  align-items: center;
+  margin-left: -14px; }
+
+.folder__title {
+  margin: 0; }
+
+.folder__icon-border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  background-color: white; }
+
+.folder__arrow-btn {
+  cursor: pointer; }
+
+/* folder body */
+.folder__inner {
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #5F5280; }
+
+.folder__list {
+  margin: 0;
+  padding: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  border-left: 2px solid #AFA9C0; }
+
+.folder__list-item {
+  vertical-align: middle;
+  list-style: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: -12.5px; }
+
+.folder__list-item::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: white;
+  border: 8px solid #5F5280;
+  margin-right: 6px; }
+
+/*folder footer */
+.folder__bottom {
+  height: 60px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 0 0 5px 5px; }
+
+.folder__bottom-wrap {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  border-left: 2px solid white; }

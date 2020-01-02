@@ -1,0 +1,151 @@
+body{
+  background-color: #2F2F2F;
+  font-family: Roboto, Arial, sans-serif;
+}
+
+.settings{
+  box-sizing: border-box;
+  width: 500px;
+  margin: 100px auto;
+  padding: 55px 60px 30px 60px;
+
+  background-color: #FDEC51;
+}
+
+.settings__title{
+  color: black;
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 60px;
+}
+
+.settings__header-wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+.settings__title{
+  font-weight: 500;
+}
+.settings__close-btn{
+  height: 20px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.settings__close-btn:hover{
+    opacity: 1;
+}
+
+.settings__close-btn::before{
+  content: "";
+  display: inline-block;
+  vertical-align: bottom;
+  height: 2px;
+  width: 15px;
+  transform: rotate(-45deg) translateX(10.25px) ;
+  background-color: black;
+}
+
+.settings__close-btn::after{
+  content: "";
+  display: inline-block;
+  vertical-align: bottom;
+  height: 2px;
+  width: 15px;
+  background-color: black;
+  transform: rotate(45deg) translateX(-10.25px) ;
+}
+
+.form{
+  position: relative;
+  box-sizing: border-box;
+  width: 500px;
+  padding: 45px 40px 45px 40px;
+
+  background-color: #FFFFFF;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.5);
+}
+
+.form__desc{
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: #AAAAAA;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.form__inp{
+  width: 100%;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+
+  border: none;
+  border-bottom: 1px solid #DEDEDE;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 400;
+  color: black;
+}
+
+.form__inp::placeholder{
+  color: #757575;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.form__inp:focus{
+  outline: none;
+}
+
+.form__inp--textarea{
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 80px;
+  margin-bottom: 0;
+}
+
+.form__inp--short{
+  width: 100%;
+}
+
+.form__item--short{
+  box-sizing: border-box;
+  display: inline-block;
+  width: 50%;
+}
+
+.form__item--short-right{
+  margin-left: -4px;
+}
+
+.form__logo{
+  position: absolute;
+  top: -30px;
+  left: 40px;
+  height: 65px;
+  width: 65px;
+  border-radius: 50%;
+}
+
+.settings__form{
+  margin-bottom: 30px;
+}
+
+.settings__bottom-wrapper{
+  text-align: right;
+}
+
+.settings__btn{
+  margin-left: 40px;
+
+  font-weight: 500;
+  font-size: 18px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.settings__btn:hover{
+    opacity: 1;
+}

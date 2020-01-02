@@ -1,0 +1,33 @@
+.user{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.user__avatar{
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  margin-right: 10px;
+
+}
+
+.user__name{
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+  font-size: 16px;
+
+  &--big{
+    font-size: 20px;
+  }
+}
+
+.user__company{
+  font-size: 14px;
+  color: #b7adad;
+
+  &--big{
+    font-size: 16px;
+  }
+}

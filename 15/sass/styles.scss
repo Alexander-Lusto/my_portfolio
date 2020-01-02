@@ -1,0 +1,149 @@
+$preview-background: url(../img/London.jpg);
+$preview-color: rgba(236,185,0, 0.8) ;
+
+html,body{
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, Arial, serif;
+  overflow-y: hidden;
+  height: 100%;
+}
+
+.preview{
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  padding: 0 30px;
+  position: relative;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: space-between;
+
+  background-image: $preview-background;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: black;
+  box-shadow: inset 40px 0 100px 0 rgba(0, 0, 0, 0.5)
+}
+
+.preview__info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  z-index: 10;
+  order: 2;
+}
+
+/* background color stripe */
+.preview::after{
+  content: "";
+  min-height: 100%;
+  width: 650px;
+  position: absolute;
+  right: -200px;
+  top: 0;
+  background-color: $preview-color;
+  transform: skewX(-15deg);
+}
+
+
+/* page handlers*/
+.preview__handlers-wrap{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.preview__handler{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  text-decoration: none;
+  color: white;
+  font-size: 28px;
+  font-weight: 500;
+  z-index: 10;
+
+  &--next{
+    margin-bottom: 25px;
+  }
+
+  &--previous{
+    margin-top: 25px;
+  }
+
+  img{
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* "read" button */
+.preview__btn-wrap{
+  display: inline;
+  text-align: right;
+  margin-top: 25px;
+}
+
+.preview__read-btn{
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  color: inherit;
+
+  &::after{
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/more.svg);
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-left: 5px;
+    margin-top: 3px;
+  }
+}
+
+/* section title */
+.preview__text-wrap{
+  text-align: right;
+  max-width: 400px;
+  margin-bottom: 25px;
+  order: 1;
+}
+
+.preview__page-number{
+  font-size: 110px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.preview__title{
+  margin: 0;
+  font-size: 45px;
+  font-weight: 500;
+  margin-bottom: 90px;
+}
+
+.preview__views{
+  margin: 0;
+  font-size: 20px;
+  font-weight: 500;
+
+  &::before{
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/view.svg);
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+}

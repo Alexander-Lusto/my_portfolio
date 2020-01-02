@@ -1,0 +1,137 @@
+.background{
+  margin: 25px 0;
+  background-color: white;
+  border: 1px solid #e8f4fc;
+}
+
+.background__item{
+  padding: 0 20px;
+}
+
+.background__item:last-child{
+  padding-bottom: 25px;
+}
+
+.background__item-title{
+  margin: 25px 0 10px 0;
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 22px;
+
+  .material-icons{
+    margin-right: 10px;
+  }
+}
+
+.background__item-text{
+  margin: 0;
+  margin-left: 35px;
+  font-size: 16px;
+}
+
+.background__person-info{
+  position: relative;
+  margin-left: 45px;
+  margin-bottom: 25px;
+
+  &::before{
+    content: "";
+    position: absolute;
+    left: -10px;
+    top: 5px;
+    width: 7px;
+    height: 7px;
+    border: 1px solid #dedede;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 10;
+  }
+
+  &:first-of-type::after{
+    content: "";
+    position: absolute;
+    left: -6.5px;
+    top: 13px;
+    width: 2px;
+    height: 85px;
+    background-color: #dedede;
+  }
+}
+
+.person-info span{
+  display: block;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+
+.person-info img{
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 125px;
+  height: auto;
+}
+
+.person-info__years{
+  font-size: 14px;
+  color: #b7adad;
+}
+
+.person-info__profession{
+
+}
+
+.person-info__company{
+  color: #7db7f0;
+  text-decoration: none;
+
+  &:hover{
+    text-decoration: underline;
+  }
+}
+
+.skills{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.skills__amount{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 50px;
+  height: 50px;
+  margin: 0 20px 0 35px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.skills__name{
+  flex-grow: 1;
+}
+
+.skills__image{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #f1f1f1;
+  margin-left: 15px;
+}
+
+.background__interests{
+  margin-left: 35px;
+}
+
+.interests__item{
+  display: inline-block;
+  margin-right: 10px;
+  padding: 10px;
+  background-color: #f1f1f1;
+}

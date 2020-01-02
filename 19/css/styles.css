@@ -1,0 +1,205 @@
+body {
+  background-color: #4677F6;
+  font-family: Roboto, Arila, sans-serif; }
+
+.rout {
+  box-sizing: border-box;
+  width: 445px;
+  height: 675px;
+  padding: 30px;
+  margin: 100px auto;
+  background-color: #fff; }
+
+/* header */
+.rout__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  cursor: default; }
+
+.rout__header .header__title {
+  font-size: 16px;
+  text-transform: uppercase;
+  margin: 0; }
+
+.rout__header .header__menu,
+.rout__header .header__search {
+  width: 25px;
+  height: 25px;
+  opacity: 0.4;
+  cursor: pointer;
+  transition: 0.2s ease-in-out; }
+
+.rout__header .header__menu:hover,
+.rout__header .header__search:hover {
+  opacity: 1; }
+
+/* map */
+.rout__map {
+  position: relative;
+  width: 465px;
+  height: 145px;
+  left: -40px;
+  box-sizing: border-box;
+  padding: 40px;
+  margin-bottom: 40px;
+  box-shadow: 0 15px 30px -15px rgba(0, 0, 0, 0.7);
+  background-image: url(../img/map.png);
+  background-position: center;
+  border-radius: 5px;
+  color: #fff;
+  z-index: 1; }
+
+.rout__map::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #4677F6;
+  opacity: 0.7;
+  z-index: 2; }
+
+.map__trip {
+  position: relative;
+  display: flex;
+  align-items: center;
+  z-index: 3; }
+
+.map__location {
+  font-weight: 500;
+  font-size: 16px; }
+
+.map__line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  flex-grow: 1;
+  height: 2px;
+  margin: 0 20px;
+  background-color: white;
+  background-image: linear-gradient(to right, white 65px, #dedede 65px); }
+
+.map__line img {
+  position: absolute;
+  top: -25px;
+  left: 55px;
+  width: 20px;
+  height: 20px; }
+
+.map__line::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff; }
+
+.map__line::after {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff; }
+
+.map__options {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 315px;
+  z-index: 3; }
+
+.map__option-item {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px; }
+
+.map__option-item span {
+  text-transform: lowercase;
+  font-weight: 400;
+  font-size: 16px; }
+
+.map__btn {
+  position: absolute;
+  right: 30px;
+  bottom: -20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 125px;
+  height: 40px;
+  font-weight: 500;
+  font-size: 14px;
+  font-family: inherit;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #4677F6;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: 0;
+  z-index: 10; }
+
+.map__btn img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px; }
+
+.map__btn:hover {
+  background-color: #507ef6;
+  transition: 0.15s ease-in-out; }
+
+/*section*/
+.rout__current-city {
+  margin-bottom: 25px;
+  font-size: 16px;
+  font-weight: 500; }
+
+.rout__instructions-item:not(:last-child) {
+  margin-bottom: 25px; }
+
+.instructions-item__icon {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin-right: 35px; }
+
+.instructions-item__desc {
+  display: inline-block;
+  margin: 0;
+  font-weight: 500;
+  font-size: 16px; }
+
+.instructions-item__desc span {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #AAAAAA; }
+
+.rout__streetview {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  height: 65px;
+  width: 425px;
+  padding: 10px;
+  margin: 30px;
+  margin-left: -10px;
+  background-image: url(../img/streetview.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 5px 0 0 5px; }
+
+.rout__streetview::after {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-image: url(../img/marker.svg);
+  vertical-align: middle; }

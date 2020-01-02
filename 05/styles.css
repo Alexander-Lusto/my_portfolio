@@ -1,0 +1,91 @@
+/* общие настройки */
+body{
+  background-image: url(img/background.jpg);
+  background-size: 100%;
+  background-position: top center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #AAAAAA;
+}
+.card__inner{
+  box-sizing: border-box;
+  padding:40px;
+  width:100%;
+  height:100%;
+}
+.card{
+  width:400px;
+  height:440px;
+  margin:10% auto;
+  background-color:#FFFFFF;
+}
+p, h1{
+  margin:0;
+}
+.qr-code img{
+  height:150px;
+  width:auto;
+}
+/* текст*/
+.option{
+  margin:0;
+}
+.info{
+  text-transform: none;
+  color:black;
+  font-weight:500;
+  font-size:15px;
+  margin:0;
+}
+/* ticket-title */
+.flight h1{
+  height:65px;
+  font-family:Prompt;
+  font-weight:900;
+  font-size:50px;
+  color:#3B8ACF;
+  margin-bottom: 0px;
+}
+.ticket-title{
+  margin-bottom:60px;
+}
+.flight:not(:first-child) p{
+  text-align:right;
+}
+.dash{
+  margin-top:10px;
+  width:25px;
+  height:4px;
+  background-color: #D3E6F4;
+  border:1px solid #E4EFF9;
+  align-self:center;
+}
+/*сетка */
+.flight-name{
+  display:flex;
+  justify-content:space-between;
+}
+.flex-row{
+  display:flex;
+  flex-direction: row;
+  margin-bottom:30px;
+}
+.ticket-info .flex-row .flex-item:not(:first-child){
+  margin-left:70px;
+}
+.flex-column{
+  display:flex;
+  justify-content: space-between;
+}
+.flex-column-item{
+  display:flex;
+  flex-direction:column;
+  justify-content: space-between;
+}

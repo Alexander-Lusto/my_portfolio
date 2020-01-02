@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My test work 2</title>
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700,800,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+
+  <header class="header">
+    <img class="header__logo" src="img/logo.png" width="69" height="30" alt="logotype">
+    <div class="header__inner">
+      <nav class="header__menu menu" id="myMenu">
+        <a class="menu__item mobile-menu icon" id="menu" href="#">Menu &#9776;</a>
+        <a class="menu__item" href="#Home"> Home. </a>
+        <a class="menu__item" href="#About us"> About us. </a>
+        <a class="menu__item" href="#Portfolio"> Portfolio. </a>
+        <a class="menu__item" href="#Blog"> Blog. </a>
+        <a class="menu__item" href="#Contact us"> Contact us. </a>
+      </nav>
+      <div class="header__block">
+        <p class="header__toogle-lng">EN </p>
+        <a class="header__link" href="#">Contact Us<img src="img/arrow.png"></a>
+      </div>
+    </div>
+  </header>
+  <main class="page">
+    <section class="page__intro intro">
+      <div class="intro__about-us about-us">
+        <h1 class="about-us__title">The Spirit of <br> Digital Agency</h1>
+        <p class="about-us__text"> Vestibulum ac diam sit amet quam vehicula elementum amet est on dui. Nulla porttitor accumsan tincidunt.</p>
+        <a class="about-us__btn-red  btn_red" href="#"> More About us</a>
+        <a class="about-us__btn-white  btn_white" href="#"> Get in Touch</a>
+      </div>
+      <div class="intro__slideshow slideshow">
+        <div class="slideshow-container">
+              <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="img/illustration.png" style="width:100%">
+              </div>
+              <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="img/illustration.png" style="width:100%">
+              </div>
+              <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="img/illustration.png" style="width:100%">
+              </div>
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+            <br>
+            <div class="dots" style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+          </div>
+    </section>
+    <section class="page__portfolio portfolio">
+      <h2 class="portfolio__title"> See some of our <br> Creative work.</h2>
+      <div class="portfolio__gallery gallery">
+        <div class="gallery__item"></div>
+        <div class="gallery__item"></div>
+        <div class="gallery__item"></div>
+        <div class="gallery__item"></div>
+        <div class="gallery__item"></div>
+        <div class="gallery__item"></div>
+      </div>
+      <p class="portfolio__link"><a href="#">See More of These.</a></p>
+    </section>
+    <section class="page__contact contact">
+      <p class="contact__desc">Contact us</p>
+      <h2 class="contact__title">Get in Touch</h2>
+      <form class="contact__form form">
+        <input class="form__item" type="email" name="user-email" placeholder="Your email">
+        <input class="form__item" type="text" name="subject" placeholder="Subject">
+        <textarea class="form__item" name="message" placeholder="Message here..."></textarea>
+        <button class="contact__btn" type="submit" name="send_message">Send Message</button>
+      </form>
+    </section>
+  </main>
+  <footer class="page__footer footer">
+    <div class="footer__inner">
+      <p class="footer__company">Doob</p>
+      <p class="footer__slogan"><strong> Creativity above </strong></P>
+        <nav class="footer__nav nav">
+          <a class="nav__item" href="#"> Home. </a>
+          <a class="nav__item" href="#"> About us. </a>
+          <a class="nav__item" href="#"> Portfolio. </a>
+          <a class="nav__item" href="#"> Blog. </a>
+          <a class="nav__item" href="#"> Contuct us. </a>
+        </nav>
+      <p class="footer__copyrigth">© 2019 - Doob, All Right Reserved</p>
+      <div class="footer__social social">
+        <a class="social__icon" href="#"><img  src="img/Facebook.png" width="16" height="36" alt="facebook"></a>
+        <a class="social__icon" href="#"><img  src="img/Twitter.png" width="36" height="30" alt="twitter"></a>
+        <a class="social__icon" href="#"><img  src="img/Dribble.png" width="37" height="37" alt="dribble"></a>
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

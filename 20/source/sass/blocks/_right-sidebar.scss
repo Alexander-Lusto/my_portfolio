@@ -1,0 +1,41 @@
+.right-sidebar{
+  height: 570px;
+  flex-shrink: 0;
+  margin: 25px;
+  order: 3;
+}
+
+.right-sidebar__title{
+  text-transform: uppercase;
+  margin: 20px 0;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.right-sidebar__list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.right-sidebar__toggle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .material-icons{
+    cursor: pointer;
+  }
+}
+
+.right-sidebar__toggle-avatar{
+  height: 125px;
+  width: 125px;
+  border-radius: 50%;
+  margin: 0  10px;
+}
+
+.user__info--big{
+  text-align: center;
+  font-size: 20px;
+}
